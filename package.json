@@ -1,0 +1,25 @@
+{
+  "name": "pathname-js",
+  "version": "1.0.0",
+  "description": "Simply manage paths.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "doc": "jsdoc2md index.js --template README.hbs --partial partials/*.hbs > README.md",
+    "commit": "npm run doc;git add .;git commit;git push",
+    "release": "npm run commit;npm publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://www.github.com/juliendargelos/pathname-js"
+  },
+  "keywords": [
+    "path",
+    "pathname"
+  ],
+  "author": "Julien Dargelos",
+  "license": "MIT",
+  "devDependencies": {
+    "jsdoc-to-markdown": "^3.0.2"
+  }
+}

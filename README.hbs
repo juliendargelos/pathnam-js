@@ -1,0 +1,30 @@
+# Pathname JS 🛣
+
+Simply manage paths.
+
+## Install
+
+```
+npm install pathname-js
+```
+
+## Usage
+
+```javascript
+var pathname = new Pathname("some/path/with/an/:id");
+pathname.string;
+// => "some/path/with/an/:id"
+
+pathname[2] = 'to';
+pathname[3] = 'number';
+pathname.id = 4;
+pathname.string;
+// => "some/path/to/number/4"
+
+pathname.concat('and', 'letter/:letter');
+pathname.letter = 'A';
+pathname.string;
+// => "some/path/to/number/4/and/letter/A"
+```
+
+{{>main}}

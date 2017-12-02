@@ -1,3 +1,4 @@
+/** @extends Array */
 class Pathname extends Array {
 
   /**

@@ -29,10 +29,11 @@ pathname.string;
 
 <a name="Pathname"></a>
 
-## Pathname
+## Pathname ⇐ <code>Array</code>
 **Kind**: global class  
+**Extends**: <code>Array</code>  
 
-* [Pathname](#Pathname)
+* [Pathname](#Pathname) ⇐ <code>Array</code>
     * [new Pathname(...parts)](#new_Pathname_new)
     * [.root](#Pathname+root) : <code>boolan</code>
     * [.keys](#Pathname+keys) : <code>Array.&lt;string&gt;</code>

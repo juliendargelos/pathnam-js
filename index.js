@@ -144,5 +144,4 @@ class Pathname extends Array {
   }
 }
 
-if(typeof module !== 'object' || module === null) module = {};
-module.exports = Pathname;
+if('module' in this) module.exports = Pathname;

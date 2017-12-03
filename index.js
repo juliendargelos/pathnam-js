@@ -145,4 +145,4 @@ class Pathname extends Array {
 }
 
 if(typeof module !== 'object' || module === null) module = {};
-module.exports = Parameters;
+module.exports = Pathname;

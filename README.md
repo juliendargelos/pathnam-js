@@ -11,6 +11,8 @@ npm install pathname-js
 ## Usage
 
 ```javascript
+var Pathname = require('pathname-js');
+
 var pathname = new Pathname("some/path/with/an/:id");
 pathname.string;
 // => "some/path/with/an/:id"

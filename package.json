@@ -1,10 +1,11 @@
 {
   "name": "pathname-js",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Simply manage paths.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "browserify index.js > dist/pathname.js",
     "doc": "jsdoc2md index.js --template README.hbs --partial partials/*.hbs > README.md",
     "commit": "npm run doc;git add .;git commit;git push",
     "release": "npm run commit;npm publish"
@@ -20,6 +21,7 @@
   "author": "Julien Dargelos",
   "license": "MIT",
   "devDependencies": {
+    "browserify": "^14.5.0",
     "jsdoc-to-markdown": "^3.0.2"
   }
 }

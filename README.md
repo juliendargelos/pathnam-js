@@ -1,4 +1,6 @@
 # Pathname JS 🛣
+[![npm version](https://badge.fury.io/js/pathname-js.svg)](https://badge.fury.io/js/pathname-js)
+[![Maintainability](https://api.codeclimate.com/v1/badges/604d5a71ae35e3ee16c2/maintainability)](https://codeclimate.com/github/juliendargelos/pathname-js/maintainability)
 
 Simply manage paths.
 

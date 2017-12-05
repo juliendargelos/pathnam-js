@@ -1,6 +1,10 @@
 /** @extends Array */
 module.exports = class Pathname extends Array {
 
+  static replace(parameter, value, string) {
+    return value === null ? string : string.replace(new RegExp(':' + parameter, 'g'), value);
+  }
+
   /**
    * Create a {@link Pathname} object.
    * @param {...(string|Array)} parts Same value as {@link Pathname#concat}'s parameters.
@@ -53,10 +57,7 @@ module.exports = class Pathname extends Array {
     var value;
 
     for(var parameter in this) {
-      if(this.hasOwnProperty(parameter)) {
-        value = this[parameter];
-        if(value !== null) string = string.replace(new RegExp(':' + parameter, 'g'), value);
-      }
+      if(this.hasOwnProperty(parameter)) string = this.constructor.replace(parameter, this[parameter], string);
     }
 
     return string;

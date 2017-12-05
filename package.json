@@ -1,6 +1,6 @@
 {
   "name": "pathname-js",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "description": "Simply manage paths.",
   "main": "index.js",
   "scripts": {
